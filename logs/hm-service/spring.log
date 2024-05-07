@@ -592,3 +592,525 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 19:49:55:447 DEBUG 9100 --- [http-nio-8080-exec-7] com.hmall.mapper.ItemMapper.selectPage   : <==      Total: 20
 19:55:40:270  INFO 9100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 19:55:40:296  INFO 9100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+21:32:43:571  INFO 8180 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 8180 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+21:32:43:573 DEBUG 8180 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:32:43:573  INFO 8180 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+21:32:44:449  INFO 8180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:32:44:451  INFO 8180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:32:44:481  INFO 8180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+21:32:44:755  INFO 8180 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6b8a8144-e15b-3941-9c2b-a32aedc257fc
+21:32:45:129  INFO 8180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:32:45:138  INFO 8180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:32:45:138  INFO 8180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:32:45:293  INFO 8180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:32:45:293  INFO 8180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1665 ms
+21:32:45:363  WARN 8180 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+21:32:45:369  INFO 8180 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+21:32:45:387  INFO 8180 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:32:45:405 ERROR 8180 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+21:33:19:403  INFO 5976 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 5976 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+21:33:19:405 DEBUG 5976 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:33:19:406  INFO 5976 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+21:33:20:326  INFO 5976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:33:20:328  INFO 5976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:33:20:352  INFO 5976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+21:33:20:575  INFO 5976 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6b8a8144-e15b-3941-9c2b-a32aedc257fc
+21:33:20:971  INFO 5976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:33:20:980  INFO 5976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:33:20:980  INFO 5976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:33:21:153  INFO 5976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:33:21:154  INFO 5976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1700 ms
+21:33:21:232  WARN 5976 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+21:33:21:238  INFO 5976 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+21:33:21:265  INFO 5976 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:33:21:283 ERROR 5976 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+21:44:41:902  INFO 3280 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 3280 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+21:44:41:905 DEBUG 3280 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:44:41:905  INFO 3280 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+21:44:42:939  INFO 3280 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d5321cdd-cd22-31f4-94d9-d242628a6450
+21:44:43:282  INFO 3280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:44:43:290  INFO 3280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:44:43:291  INFO 3280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:44:43:413  INFO 3280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:44:43:413  INFO 3280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1461 ms
+21:44:43:480  WARN 3280 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+21:44:43:482  INFO 3280 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+21:44:43:501  INFO 3280 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:44:43:519 ERROR 3280 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+21:45:17:690  INFO 13120 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 13120 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+21:45:17:693 DEBUG 13120 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:45:17:693  INFO 13120 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+21:45:18:808  INFO 13120 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d5321cdd-cd22-31f4-94d9-d242628a6450
+21:45:19:176  INFO 13120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:45:19:185  INFO 13120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:45:19:185  INFO 13120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:45:19:304  INFO 13120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:45:19:305  INFO 13120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1562 ms
+21:45:19:372  WARN 13120 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+21:45:19:375  INFO 13120 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+21:45:19:394  INFO 13120 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:45:19:412 ERROR 13120 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+21:54:13:970  INFO 6920 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 6920 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+21:54:13:972 DEBUG 6920 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:54:13:972  INFO 6920 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+21:54:14:970  INFO 6920 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d5321cdd-cd22-31f4-94d9-d242628a6450
+21:54:15:316  INFO 6920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:54:15:325  INFO 6920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:54:15:325  INFO 6920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:54:15:440  INFO 6920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:54:15:441  INFO 6920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1413 ms
+21:54:15:507  WARN 6920 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+21:54:15:510  INFO 6920 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+21:54:15:526  INFO 6920 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:54:15:543 ERROR 6920 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+21:56:13:030  INFO 10596 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 10596 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+21:56:13:033 DEBUG 10596 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:56:13:033  INFO 10596 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+21:56:14:052  INFO 10596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1aae06fd-a882-374c-9a02-35c372b33b6a
+21:56:14:404  INFO 10596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:56:14:419  INFO 10596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:56:14:420  INFO 10596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:56:14:536  INFO 10596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:56:14:536  INFO 10596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1457 ms
+21:56:14:593  WARN 10596 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.hmall.user.service.IUserService' available: expected single matching bean but found 2: userServiceImpl,IUserService
+21:56:14:599  INFO 10596 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+21:56:14:624  INFO 10596 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:56:14:647 ERROR 10596 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.controller.UserController required a single bean, but 2 were found:
+	- userServiceImpl: defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]
+	- IUserService: defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\IUserService.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+21:56:59:646  INFO 1060 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 1060 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+21:56:59:649 DEBUG 1060 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:56:59:650  INFO 1060 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+21:57:00:649  INFO 1060 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d5321cdd-cd22-31f4-94d9-d242628a6450
+21:57:00:986  INFO 1060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:57:00:996  INFO 1060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:57:00:996  INFO 1060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:57:01:112  INFO 1060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:57:01:113  INFO 1060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1415 ms
+21:57:01:178  WARN 1060 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+21:57:01:181  INFO 1060 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+21:57:01:198  INFO 1060 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:57:01:215 ERROR 1060 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+21:59:12:049  INFO 11256 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 11256 (D:\workspace\hmall\hm-service\target\classes started by Administrator in D:\workspace\hmall)
+21:59:12:051 DEBUG 11256 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:59:12:051  INFO 11256 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
+21:59:12:960  INFO 11256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:59:12:963  INFO 11256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:59:12:993  INFO 11256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+21:59:13:694  INFO 11256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:59:13:705  INFO 11256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:59:13:705  INFO 11256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:59:13:856  INFO 11256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:59:13:857  INFO 11256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1760 ms
+21:59:16:032  INFO 11256 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+21:59:16:506  INFO 11256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+21:59:16:507  INFO 11256 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+21:59:16:510  INFO 11256 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+21:59:16:548  INFO 11256 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+21:59:16:797  INFO 11256 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 5.192 seconds (JVM running for 6.185)
+22:00:11:980  INFO 11256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:00:11:981  INFO 11256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+22:00:11:984  INFO 11256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+22:00:12:181  INFO 11256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+22:00:12:471  INFO 11256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+22:00:12:478 DEBUG 11256 --- [http-nio-8080-exec-1] c.h.m.ItemMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (name LIKE ? AND status = ?)
+22:00:12:499 DEBUG 11256 --- [http-nio-8080-exec-1] c.h.m.ItemMapper.selectPage_mpCount      : ==> Parameters: %手机%(String), 1(Integer)
+22:00:12:724 DEBUG 11256 --- [http-nio-8080-exec-1] c.h.m.ItemMapper.selectPage_mpCount      : <==      Total: 1
+22:00:12:742 DEBUG 11256 --- [http-nio-8080-exec-1] com.hmall.mapper.ItemMapper.selectPage   : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (name LIKE ? AND status = ?) ORDER BY update_time DESC LIMIT ?,?
+22:00:12:743 DEBUG 11256 --- [http-nio-8080-exec-1] com.hmall.mapper.ItemMapper.selectPage   : ==> Parameters: %手机%(String), 1(Integer), 200(Long), 20(Long)
+22:00:12:767 DEBUG 11256 --- [http-nio-8080-exec-1] com.hmall.mapper.ItemMapper.selectPage   : <==      Total: 20
+22:00:14:419 DEBUG 11256 --- [http-nio-8080-exec-2] c.h.m.ItemMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (name LIKE ? AND status = ?)
+22:00:14:420 DEBUG 11256 --- [http-nio-8080-exec-2] c.h.m.ItemMapper.selectPage_mpCount      : ==> Parameters: %手机%(String), 1(Integer)
+22:00:14:596 DEBUG 11256 --- [http-nio-8080-exec-2] c.h.m.ItemMapper.selectPage_mpCount      : <==      Total: 1
+22:00:14:600 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.ItemMapper.selectPage   : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (name LIKE ? AND status = ?) ORDER BY update_time DESC LIMIT ?,?
+22:00:14:602 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.ItemMapper.selectPage   : ==> Parameters: %手机%(String), 1(Integer), 220(Long), 20(Long)
+22:00:14:617 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.ItemMapper.selectPage   : <==      Total: 20
+22:00:17:006 ERROR 11256 --- [http-nio-8080-exec-3] c.h.common.advice.CommonExceptionAdvice  : 自定义异常 -> com.hmall.common.exception.UnauthorizedException , 异常原因：token已经过期  
+22:00:17:010 DEBUG 11256 --- [http-nio-8080-exec-3] c.h.common.advice.CommonExceptionAdvice  : 
+
+com.hmall.common.exception.UnauthorizedException: token已经过期
+	at com.hmall.utils.JwtTool.parseToken(JwtTool.java:65) ~[classes/:na]
+	at com.hmall.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:21) ~[classes/:na]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+22:00:18:884 DEBUG 11256 --- [http-nio-8080-exec-4] com.hmall.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+22:00:18:885 DEBUG 11256 --- [http-nio-8080-exec-4] com.hmall.mapper.UserMapper.selectOne    : ==> Parameters: jack(String)
+22:00:18:891 DEBUG 11256 --- [http-nio-8080-exec-4] com.hmall.mapper.UserMapper.selectOne    : <==      Total: 1
+22:00:19:249 DEBUG 11256 --- [http-nio-8080-exec-5] c.hmall.mapper.AddressMapper.selectList  : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+22:00:19:249 DEBUG 11256 --- [http-nio-8080-exec-5] c.hmall.mapper.AddressMapper.selectList  : ==> Parameters: 1(Long)
+22:00:19:252 DEBUG 11256 --- [http-nio-8080-exec-5] c.hmall.mapper.AddressMapper.selectList  : <==      Total: 4
+22:00:30:576 DEBUG 11256 --- [http-nio-8080-exec-6] c.hmall.mapper.AddressMapper.selectList  : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+22:00:30:576 DEBUG 11256 --- [http-nio-8080-exec-6] c.hmall.mapper.AddressMapper.selectList  : ==> Parameters: 1(Long)
+22:00:30:578 DEBUG 11256 --- [http-nio-8080-exec-6] c.hmall.mapper.AddressMapper.selectList  : <==      Total: 4
+22:00:33:812 DEBUG 11256 --- [http-nio-8080-exec-8] com.hmall.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+22:00:33:813 DEBUG 11256 --- [http-nio-8080-exec-8] com.hmall.mapper.UserMapper.selectOne    : ==> Parameters: jack(String)
+22:00:33:816 DEBUG 11256 --- [http-nio-8080-exec-8] com.hmall.mapper.UserMapper.selectOne    : <==      Total: 1
+22:00:34:218 DEBUG 11256 --- [http-nio-8080-exec-7] c.hmall.mapper.AddressMapper.selectList  : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+22:00:34:219 DEBUG 11256 --- [http-nio-8080-exec-7] c.hmall.mapper.AddressMapper.selectList  : ==> Parameters: 1(Long)
+22:00:34:221 DEBUG 11256 --- [http-nio-8080-exec-7] c.hmall.mapper.AddressMapper.selectList  : <==      Total: 4
+22:00:38:754 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+22:00:38:754 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.selectCount  : ==> Parameters: 1(Long), 100001320011(Long)
+22:00:38:756 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.selectCount  : <==      Total: 1
+22:00:38:758 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ?)
+22:00:38:759 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.selectCount  : ==> Parameters: 1(Long)
+22:00:38:759 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.selectCount  : <==      Total: 1
+22:00:38:765 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.insert       : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+22:00:38:766 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.insert       : ==> Parameters: 1(Long), 100001320011(Long), 一加手机6T 8GB+128GB 亮瓷黑 光感屏幕指纹 高通骁龙845 全面屏双摄游戏手机 全网通4G 双卡双待(String), {"颜色": "黑色"}(String), 3500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/6425/40/3887/217009/5bd716e9E4886d5d8/b3da975f4047ded3.jpg!q70.jpg.webp(String)
+22:00:38:776 DEBUG 11256 --- [http-nio-8080-exec-9] com.hmall.mapper.CartMapper.insert       : <==    Updates: 1
+22:00:38:986 DEBUG 11256 --- [http-nio-8080-exec-10] com.hmall.mapper.CartMapper.selectList   : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+22:00:38:986 DEBUG 11256 --- [http-nio-8080-exec-10] com.hmall.mapper.CartMapper.selectList   : ==> Parameters: 1(Long)
+22:00:38:988 DEBUG 11256 --- [http-nio-8080-exec-10] com.hmall.mapper.CartMapper.selectList   : <==      Total: 1
+22:00:38:994 DEBUG 11256 --- [http-nio-8080-exec-10] c.h.mapper.ItemMapper.selectBatchIds     : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+22:00:38:994 DEBUG 11256 --- [http-nio-8080-exec-10] c.h.mapper.ItemMapper.selectBatchIds     : ==> Parameters: 100001320011(Long)
+22:00:38:996 DEBUG 11256 --- [http-nio-8080-exec-10] c.h.mapper.ItemMapper.selectBatchIds     : <==      Total: 1
+22:00:41:035 DEBUG 11256 --- [http-nio-8080-exec-1] c.hmall.mapper.AddressMapper.selectList  : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+22:00:41:036 DEBUG 11256 --- [http-nio-8080-exec-1] c.hmall.mapper.AddressMapper.selectList  : ==> Parameters: 1(Long)
+22:00:41:040 DEBUG 11256 --- [http-nio-8080-exec-1] c.hmall.mapper.AddressMapper.selectList  : <==      Total: 4
+22:00:43:128 DEBUG 11256 --- [http-nio-8080-exec-2] c.h.mapper.ItemMapper.selectBatchIds     : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+22:00:43:130 DEBUG 11256 --- [http-nio-8080-exec-2] c.h.mapper.ItemMapper.selectBatchIds     : ==> Parameters: 100001320011(Long)
+22:00:43:132 DEBUG 11256 --- [http-nio-8080-exec-2] c.h.mapper.ItemMapper.selectBatchIds     : <==      Total: 1
+22:00:43:142 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.OrderMapper.insert      : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+22:00:43:143 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.OrderMapper.insert      : ==> Parameters: 1787845016484327425(Long), 3500(Integer), 3(Integer), 1(Long), 1(Integer)
+22:00:43:145 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.OrderMapper.insert      : <==    Updates: 1
+22:00:43:153 DEBUG 11256 --- [http-nio-8080-exec-2] c.hmall.mapper.OrderDetailMapper.insert  : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+22:00:43:155 DEBUG 11256 --- [http-nio-8080-exec-2] c.hmall.mapper.OrderDetailMapper.insert  : ==> Parameters: 1787845016484327425(Long), 100001320011(Long), 1(Integer), 一加手机6T 8GB+128GB 亮瓷黑 光感屏幕指纹 高通骁龙845 全面屏双摄游戏手机 全网通4G 双卡双待(String), {"颜色": "黑色"}(String), 3500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/6425/40/3887/217009/5bd716e9E4886d5d8/b3da975f4047ded3.jpg!q70.jpg.webp(String)
+22:00:43:161 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.delete       : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+22:00:43:161 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.delete       : ==> Parameters: 1(Long), 100001320011(Long)
+22:00:43:162 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.delete       : <==    Updates: 1
+22:00:43:164 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.ItemMapper.updateStock  : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+22:00:43:164 DEBUG 11256 --- [http-nio-8080-exec-2] com.hmall.mapper.ItemMapper.updateStock  : ==> Parameters: 1(Integer), 100001320011(Long)
+22:00:43:460 DEBUG 11256 --- [http-nio-8080-exec-3] com.hmall.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+22:00:43:460 DEBUG 11256 --- [http-nio-8080-exec-3] com.hmall.mapper.OrderMapper.selectById  : ==> Parameters: 1787845016484327425(Long)
+22:00:43:463 DEBUG 11256 --- [http-nio-8080-exec-3] com.hmall.mapper.OrderMapper.selectById  : <==      Total: 1
+22:00:43:673 DEBUG 11256 --- [http-nio-8080-exec-4] c.hmall.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+22:00:43:674 DEBUG 11256 --- [http-nio-8080-exec-4] c.hmall.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1787845016484327425(Long)
+22:00:43:675 DEBUG 11256 --- [http-nio-8080-exec-4] c.hmall.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+22:00:43:685 DEBUG 11256 --- [http-nio-8080-exec-4] com.hmall.mapper.PayOrderMapper.insert   : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+22:00:43:689 DEBUG 11256 --- [http-nio-8080-exec-4] com.hmall.mapper.PayOrderMapper.insert   : ==> Parameters: 1787845018766028801(Long), 1787845016484327425(Long), 1787845018732474369(Long), 1(Long), balance(String), 3500(Integer), 5(Integer), 1(Integer), 2024-05-08T00:00:43.677434600(LocalDateTime)
+22:00:43:701 DEBUG 11256 --- [http-nio-8080-exec-4] com.hmall.mapper.PayOrderMapper.insert   : <==    Updates: 1
+22:00:48:457 DEBUG 11256 --- [http-nio-8080-exec-5] c.h.mapper.PayOrderMapper.selectById     : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+22:00:48:457 DEBUG 11256 --- [http-nio-8080-exec-5] c.h.mapper.PayOrderMapper.selectById     : ==> Parameters: 1787845018766028801(Long)
+22:00:48:462 DEBUG 11256 --- [http-nio-8080-exec-5] c.h.mapper.PayOrderMapper.selectById     : <==      Total: 1
+22:00:48:463  INFO 11256 --- [http-nio-8080-exec-5] com.hmall.service.impl.UserServiceImpl   : 开始扣款
+22:00:48:463 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.UserMapper.selectById   : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+22:00:48:464 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.UserMapper.selectById   : ==> Parameters: 1(Long)
+22:00:48:466 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.UserMapper.selectById   : <==      Total: 1
+22:00:48:595 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.UserMapper.updateMoney  : ==>  Preparing: update user set balance = balance - 3500 where id = ?
+22:00:48:595 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.UserMapper.updateMoney  : ==> Parameters: 1(Long)
+22:00:48:597 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.UserMapper.updateMoney  : <==    Updates: 1
+22:00:48:597  INFO 11256 --- [http-nio-8080-exec-5] com.hmall.service.impl.UserServiceImpl   : 扣款成功
+22:00:48:604 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.PayOrderMapper.update   : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+22:00:48:605 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.PayOrderMapper.update   : ==> Parameters: 3(Integer), 2024-05-07T22:00:48.597466800(LocalDateTime), 1787845018766028801(Long), 0(Integer), 1(Integer)
+22:00:48:606 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.PayOrderMapper.update   : <==    Updates: 1
+22:00:48:610 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, pay_time=? WHERE id=?
+22:00:48:610 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.OrderMapper.updateById  : ==> Parameters: 2(Integer), 2024-05-07T22:00:48.606737400(LocalDateTime), 1787845016484327425(Long)
+22:00:48:612 DEBUG 11256 --- [http-nio-8080-exec-5] com.hmall.mapper.OrderMapper.updateById  : <==    Updates: 1
+22:00:48:901 DEBUG 11256 --- [http-nio-8080-exec-6] com.hmall.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+22:00:48:901 DEBUG 11256 --- [http-nio-8080-exec-6] com.hmall.mapper.OrderMapper.selectById  : ==> Parameters: 1787845016484327425(Long)
+22:00:48:903 DEBUG 11256 --- [http-nio-8080-exec-6] com.hmall.mapper.OrderMapper.selectById  : <==      Total: 1
+22:02:00:428  INFO 11256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+22:02:00:441  INFO 11256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+22:02:03:091  INFO 7432 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 7432 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+22:02:03:094 DEBUG 7432 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:02:03:094  INFO 7432 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+22:02:03:961  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:02:03:964  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:02:03:986  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+22:02:04:669  INFO 7432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+22:02:04:690  INFO 7432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:02:04:691  INFO 7432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:02:04:873  INFO 7432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:02:04:873  INFO 7432 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1735 ms
+22:02:04:946  WARN 7432 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+22:02:04:949  INFO 7432 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+22:02:04:976  INFO 7432 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:02:05:004 ERROR 7432 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+22:02:55:845  INFO 10868 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 10868 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+22:02:55:848 DEBUG 10868 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:02:55:848  INFO 10868 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+22:02:56:713  INFO 10868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:02:56:715  INFO 10868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:02:56:738  INFO 10868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+22:02:57:326  INFO 10868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+22:02:57:336  INFO 10868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:02:57:336  INFO 10868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:02:57:485  INFO 10868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:02:57:485  INFO 10868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1592 ms
+22:02:57:553  WARN 10868 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+22:02:57:556  INFO 10868 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+22:02:57:576  INFO 10868 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:02:57:594 ERROR 10868 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+22:03:11:789  INFO 12856 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 12856 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+22:03:11:792 DEBUG 12856 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:03:11:793  INFO 12856 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+22:03:12:575  INFO 12856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:03:12:577  INFO 12856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:03:12:600  INFO 12856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+22:03:13:228  INFO 12856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+22:03:13:238  INFO 12856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:03:13:238  INFO 12856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:03:13:382  INFO 12856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:03:13:382  INFO 12856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1550 ms
+22:03:13:455  WARN 12856 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+22:03:13:457  INFO 12856 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+22:03:13:474  INFO 12856 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:03:13:491 ERROR 12856 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+22:46:34:770  INFO 5136 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 5136 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+22:46:34:773 DEBUG 5136 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:46:34:773  INFO 5136 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+22:46:35:948  INFO 5136 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d5321cdd-cd22-31f4-94d9-d242628a6450
+22:46:36:298  INFO 5136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+22:46:36:307  INFO 5136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:46:36:307  INFO 5136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:46:36:424  INFO 5136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:46:36:424  INFO 5136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1601 ms
+22:46:36:489  WARN 5136 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+22:46:36:491  INFO 5136 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+22:46:36:509  INFO 5136 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:46:36:526 ERROR 5136 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+22:51:18:292  INFO 6048 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.21 on DESKTOP-P55U67U with PID 6048 (D:\workspace\hmall\user-service\target\classes started by Administrator in D:\workspace\hmall)
+22:51:18:294 DEBUG 6048 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:51:18:295  INFO 6048 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+22:51:19:250  WARN 6048 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hmall.user]' package. Please check your configuration.
+22:51:19:403  INFO 6048 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=77e7d806-23c0-3688-a23d-80ec3cb85f48
+22:51:19:754  INFO 6048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+22:51:19:764  INFO 6048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:51:19:764  INFO 6048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:51:19:888  INFO 6048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:51:19:889  INFO 6048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1551 ms
+22:51:19:955  WARN 6048 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [D:\workspace\hmall\user-service\target\classes\com\hmall\user\service\impl\UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+22:51:19:958  INFO 6048 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+22:51:19:985  INFO 6048 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:51:20:003 ERROR 6048 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.user.service.impl.UserServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
